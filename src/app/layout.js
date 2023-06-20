@@ -1,6 +1,9 @@
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
+
 import { Anton } from "next/font/google";
 const anton = Anton({
   subsets: ["latin"],
@@ -23,7 +26,11 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <GoogleAnalytics />
       <body className={bangers.className}>
-        <div className='container'>{children}</div>
+        <div className='container'>
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
