@@ -1,11 +1,11 @@
 import Script from "next/script";
+const G_ID = "G-FEC7GPRGWK";
 
-const GoogleAnalytics = (ga_id) => (
+const GoogleAnalytics = () => (
   <>
     <Script
       async
-      src={`https://www.googletagmanager.com/gtag/js? 
-      id=${ga_id}`}
+      src={`https://www.googletagmanager.com/gtag/js?id=${G_ID}`}
     ></Script>
     <Script
       id='google-analytics'
@@ -15,7 +15,7 @@ const GoogleAnalytics = (ga_id) => (
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${ga_id}');
+          gtag('config', '${G_ID}');
         `,
       }}
     ></Script>
