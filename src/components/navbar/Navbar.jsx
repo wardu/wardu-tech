@@ -2,6 +2,7 @@
 
 import styles from "./Navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   {
@@ -31,7 +32,9 @@ const Navbar = () => {
     <>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Link href='/'> WARDU tech</Link>
+          <Link href='/'>
+            <Image src='/wardu-logo.svg' alt='logo' width={60} height={60} />
+          </Link>
         </div>
         <div className={styles.links}>
           {links.map((link) => (

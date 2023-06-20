@@ -1,26 +1,19 @@
 .container {
-  height: 100px;
+  height: 1rem;
   display: Flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
+  padding-right: 1rem;
 }
 
 .links {
   display: flex;
   align-items: center;
-  gap: 1rem;
-}
-
-.logout {
-  padding: 5px;
-  border: none;
-  background-color: #53c28b;
-  color: white;
-  cursor: pointer;
-  border-radius: 3px;
+  gap: 0.6rem;
 }
