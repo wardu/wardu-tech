@@ -1,0 +1,64 @@
+.container {
+  color: white;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.title {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1.5rem 1rem;
+}
+.cardContainer {
+  box-shadow: 0px 5px 10px 0px #b20e2c;
+  margin: 3rem;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+}
+.cardContainer:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 10px 20px 2px #b20e2c;
+}
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.cardText {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.cardButton {
+  background-color: #b20e2c;
+  color: white;
+  margin: 2rem;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 88% 100%, 0 100%);
+}
+
+.cardButton:hover {
+  background-color: #940822;
+  font-size: large;
+  font-weight: bold;
+}
