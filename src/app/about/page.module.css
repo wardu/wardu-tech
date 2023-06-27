@@ -13,14 +13,11 @@
   padding: 1.5rem 1rem;
 }
 .cardContainer {
-  box-shadow: 0px 5px 10px 0px #b20e2c;
   margin: 3rem;
-  /* max-width: 20rem; */
+  max-width: 40rem;
   display: flex;
   flex-direction: column;
   justify-self: space-between;
-  color: black;
-  background-color: white;
 }
 
 .card {
@@ -39,4 +36,46 @@
 .cardText {
   font-size: 1.5rem;
   padding: 0.5rem;
+}
+
+.list {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.blockquote {
+  position: relative;
+  /* background: #ddd; */
+}
+
+.blockquote:before {
+  position: absolute;
+  content: open-quote;
+  font-size: 4em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+.blockquote:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 4em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}
+.blockquote p {
+  display: inline;
+}
+
+.listTitles {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+.buttonContainer {
+  padding-top: 2rem;
 }
