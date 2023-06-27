@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import Image from "next/image";
 import Button from "@/components/Button/Button";
 
 import { Roboto } from "next/font/google";
@@ -19,15 +18,6 @@ const About = () => {
               We offer a unique suite of services, tailored specifically for the
               motorcycle mechanics and tuners industry.
             </p>
-            <div className={styles.profileContainer}>
-              <Image
-                className={styles.profile}
-                src='/profile.png'
-                alt='Wardu Profile Photo'
-                width={200}
-                height={200}
-              />
-            </div>
           </div>
           <ul className={styles.list}>
             <li>

@@ -1,126 +1,55 @@
 import React from "react";
 import Image from "next/image";
+import styles from "./Carousel.module.css";
 
 const Carousel = () => {
   return (
     <div>
       <div className={styles.clientCarousel}>
-        <p> Our Clients Are Backed By:</p>
+        <p className={styles.text}> Our Clients Are Backed By:</p>
         <div className={styles.slider}>
           <div className={styles.slideTrack}>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png'
-                height='100'
-                width='250'
-                alt=''
-              />
-            </div>
-
-            <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/vercel.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png'
-                height='100'
-                width='250'
-                alt=''
-              />
-            </div>
-
-            <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/google.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/mongo.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/node.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/figma.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/github.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/react.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/amazon.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/vercel.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/facebook.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/react.svg' height='100' width='250' alt='' />
             </div>
             <div className={styles.slide}>
-              <Image
-                src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png'
-                height='100'
-                width='250'
-                alt=''
-              />
+              <Image src='/node.svg' height='100' width='250' alt='' />
+            </div>
+            <div className={styles.slide}>
+              <Image src='vercel.svg' height='100' width='250' alt='' />
+            </div>
+            <div className={styles.slide}>
+              <Image src='/amazon.svg' height='100' width='250' alt='' />
             </div>
           </div>
         </div>
