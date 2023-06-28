@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Hero from "@/components/hero/Hero";
 import Intro from "@/components/intro/Intro";
 import Carousel from "@/components/carousel/Carousel";
+import MeetFounder from "@/components/MeetFounder/MeetFounder";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Intro />
       <Carousel />
+      <MeetFounder />
     </>
   );
 }
