@@ -14,9 +14,9 @@ const MeetFounder = () => {
           alt='Warren'
         />
         <p className={styles.description}>
-          I'm Warren, founder and coder at Wardu Technologies. Passionate about
-          motorcycles and unwavering performance. We strive for the best,
-          rejecting mediocrity. Join us to experience digital greatness.
+          {
+            " I'm Warren, founder and coder at Wardu Technologies. Passionate about motorcycles and unwavering performance. We strive for the best, rejecting mediocrity. Join us to experience digital greatness."
+          }
         </p>
         <div className={styles.button}>
           <Button url='/contact' text='Work With Us' />
