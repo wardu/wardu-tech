@@ -4,13 +4,13 @@ import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
-import { Anton } from "@next/font/google";
+import { Anton } from "next/font/google";
 const anton = Anton({
   subsets: ["latin"],
   weight: "400",
 });
 
-import { Bangers } from "@next/font/google";
+import { Bangers } from "next/font/google";
 const bangers = Bangers({
   subsets: ["latin"],
   weight: "400",

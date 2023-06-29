@@ -6,6 +6,7 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <Image
+        priority={true}
         src={"/bike-dash.jpg"}
         fill={true}
         alt='motorcycle display'
