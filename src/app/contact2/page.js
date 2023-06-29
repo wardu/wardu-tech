@@ -16,7 +16,9 @@ export default function Contact2() {
   const onBlur = ({ target }) =>
     setTouched((prev) => ({ ...prev, [target.name]: true }));
 
-  const handleChange = ({ target }) =>
+  const handleChange = ({ target }) => {
+    console.log(`Setting ${target.name} to ${target.value}`);
+
     setState((prev) => ({
       ...prev,
       values: {
@@ -24,6 +26,7 @@ export default function Contact2() {
         [target.name]: target.value,
       },
     }));
+  };
 
   const onSubmit = async () => {
     setState((prev) => ({
