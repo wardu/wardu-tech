@@ -7,6 +7,8 @@ import Questions from "@/components/Questions/Questions";
 import Process from "@/components/Process/Process";
 import Updates from "@/components/Updates/Updates";
 import WorkTogether from "@/components/WorkTogether/WorkTogether";
+import Testimonials from "@/components/Testimonials/Testimonials";
+import data from "@/components/Testimonials/data.json";
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
       <Process />
       <Updates />
       <WorkTogether />
+      <Testimonials testimonialData={data} />
     </>
   );
 }
