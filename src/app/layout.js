@@ -10,8 +10,8 @@ const anton = Anton({
   weight: "400",
 });
 
-import { Bangers } from "next/font/google";
-const bangers = Bangers({
+import { Nunito } from "next/font/google";
+const nunito = Nunito({
   subsets: ["latin"],
   weight: "400",
 });
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <GoogleAnalytics />
-      <body className={bangers.className}>
+      <body className={nunito.className}>
         <div className='container'>
           <Navbar />
           {children}
