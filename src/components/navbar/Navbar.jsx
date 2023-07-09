@@ -2,9 +2,9 @@
 
 import styles from "./Navbar.module.css";
 import Link from "next/link";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 
-const links = [
+const navLinks = [
   {
     id: 1,
     title: "Home",
@@ -22,26 +22,38 @@ const links = [
   },
   {
     id: 4,
-    title: "Contact",
+    title: "Contact →",
     url: "/contact",
   },
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <>
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href='/'>
-            <Image src='/wardu-logo.svg' alt='logo' width={60} height={60} />
+            <div className={styles.logo}>
+              <h2 className={styles.logoText}>WARDU</h2>
+              <h2 className={styles.logoText}>TECHNOLOGIES.</h2>
+            </div>
           </Link>
         </div>
         <div className={styles.links}>
-          {links.map((link) => (
-            <Link href={link.url} key={link.id} className={styles.link}>
-              {link.title}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname.endsWith(link.url);
+
+            return (
+              <Link
+                className={isActive ? styles.linkActive : styles.linkInactive}
+                href={link.url}
+                key={link.id}
+              >
+                {link.title}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </>

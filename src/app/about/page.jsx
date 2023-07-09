@@ -66,29 +66,24 @@ const About = () => {
           <div>
             <h3 className={styles.listTitles}>Our Promise</h3>
             <p>
-              If you're serious about maximising the return on your investment
-              in web design and SEO for your motorcycle mechanics and tuners
-              business, then you've landed at the right place. WT's specific
-              niche focus gives us a competitive edge, allowing us to deeply
-              understand the needs of our clients and provide superior, tailored
-              solutions.
+              {
+                "If you're serious about maximising the return on your investment in web design and SEO for your motorcycle mechanics and tuners business, then you've landed at the right place. WT's specific niche focus gives us a competitive edge, allowing us to deeply understand the needs of our clients and provide superior, tailored solutions."
+              }
             </p>
 
             <p>
-              At WT, we're not just creating appealing websites; we're
-              fashioning high-performance digital platforms that generate real
-              results. Our proven experience in this niche, combined with our
-              commitment to transparent, honest communication sets us apart.
-              We're your consultants, not salespeople, and we're here to guide
-              you based on your unique needs.
+              {
+                "At WT, we're not just creating appealing websites; we're fashioning high-performance digital platforms that generate real results. Our proven experience in this niche, combined with our commitment to transparent, honest communication sets us apart. We're your consultants, not salespeople, and we're here to guide you based on your unique needs."
+              }
             </p>
 
             <h3 className={styles.listTitles}>
               Ready to Rev Up Your Online Presence?
             </h3>
             <p>
-              We're so confident in our skills and the calibre of our work, that
-              we back each project with a 100% refund guarantee.
+              {
+                "We're so confident in our skills and the calibre of our work, that we back each project with a 100% refund guarantee."
+              }
             </p>
             <div className={styles.buttonContainer}>
               <Button url='/contact' text='Work With Us' />

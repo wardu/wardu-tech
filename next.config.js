@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // allow images from other domains
   images: {
-    domains: ["s3-us-west-2.amazonaws.com"],
+    domains: ["dummyimage.com", "images.unsplash.com"],
   },
 };
 

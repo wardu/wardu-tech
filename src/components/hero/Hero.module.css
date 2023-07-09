@@ -1,26 +1,120 @@
 .container {
   min-height: 80vh;
-  min-width: 100vw;
+  min-width: 90vw;
+  display: flex;
+}
+
+.heroImage {
+  position: absolute;
+  height: 123%;
+  width: 172%;
+  left: -100%;
+  top: -66%;
+  bottom: 0;
+  z-index: 2;
+}
+.left {
+  width: 50%;
+  color: white;
+}
+.right {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  position: relative;
 }
-.title {
-  z-index: 2;
+.rightContainer {
+  padding-top: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heroText {
   color: white;
-  font-size: 3rem;
-  padding: 1.5rem 1rem;
+  padding: 1em;
+  font-size: 12px;
+  font-weight: 300;
+  width: 73%;
 }
+.heroTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.titleWrapper {
+  padding-left: 24px;
+  padding-top: 90px;
+}
+.topTitle,
+.lowerTitle {
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
 
+  background: linear-gradient(to right, #eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.topTitle {
+  width: 140%;
+}
+.scrollContainer {
+  display: flex;
+  padding-top: 4em;
+  padding-left: 24px;
+
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-image: linear-gradient(rgb(253, 5, 5, 0.1), rgb(183, 9, 186)) 0.5;
+}
+.scrollText {
+  font-size: 1em;
+  font-weight: 300;
+  width: 40%;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+.marketLeaders {
+  padding: 4em 1.5em 1.5em 1.5em;
+  font-weight: 400;
+  font-size: 32px;
+
+  background: linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 .content {
-  z-index: 2;
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
+  font-weight: 400;
+  font-size: 72px;
+  letter-spacing: 0.01em;
+  line-height: 100px;
 }
-
 .button {
   padding-top: 3rem;
+}
+.brandsContainer {
+  color: white;
+}
+.brandsTitle {
+  font-size: 12px;
+  padding-top: 10em;
+}
+.brands {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+.brands img {
+  margin-right: 2em;
 }
