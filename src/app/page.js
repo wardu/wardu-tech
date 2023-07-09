@@ -1,4 +1,4 @@
-import Hero from "@/components/hero/Hero";
+import Hero from "@/components/Hero/Hero";
 import Intro from "@/components/intro/Intro";
 import Carousel from "@/components/carousel/Carousel";
 import MeetFounder from "@/components/MeetFounder/MeetFounder";

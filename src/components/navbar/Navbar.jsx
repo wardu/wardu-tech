@@ -54,11 +54,6 @@ const Navbar = () => {
               </Link>
             );
           })}
-          {/* {links.map((link) => (
-            <Link href={link.url} key={link.id} className={styles.link}>
-              {link.title}
-            </Link>
-          ))} */}
         </div>
       </div>
     </>

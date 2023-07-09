@@ -1,7 +1,14 @@
-.container {
-  width: max-content;
+.button {
+  width: 220px;
   padding: 20px;
-  background-color: #b20e2c;
-  color: #fff;
-  border: 1px solid white;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s; /* Transition effect */
+  cursor: pointer; /* Cursor changes when you hover over it */
+}
+.button:hover {
+  transform: scale(1.1); /* Make the button 10% larger */
 }
