@@ -2,10 +2,16 @@
   color: black;
   background-color: white;
   width: 100vw;
-  padding: 3em 5vw 4em 5vw;
+  padding: 0 5vw 4em 5vw;
 }
 .cardImageContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textWrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -13,8 +19,7 @@
   font-weight: 300;
   font-size: 1.1em;
   padding-bottom: 0.9em;
-  width: 80%;
-  margin: 0 auto;
+  text-align: center;
 }
 .cardText {
   font-weight: 300;
@@ -22,7 +27,8 @@
   padding-bottom: 0.6em;
   line-height: 1.4em;
   width: 80%;
-  margin: 0 auto;
+  margin-left: 3em;
+  text-align: center;
 }
 .container {
   padding: 0 5vw 0 5vw;
@@ -41,7 +47,8 @@
   padding-bottom: 0.6em;
 }
 .card {
-  width: 200px;
+  display: flex;
+  padding-top: 5em;
 }
 .buttonWrapper {
   width: 100vw;
