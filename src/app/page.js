@@ -9,11 +9,13 @@ import Updates from "@/components/Updates/Updates";
 import WorkTogether from "@/components/WorkTogether/WorkTogether";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import data from "@/components/Testimonials/data.json";
+import AboutUs from "@/components/AboutUs/AboutUs";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <AboutUs />
       <Intro />
       <Carousel />
       <MeetFounder />
