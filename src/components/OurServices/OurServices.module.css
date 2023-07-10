@@ -3,6 +3,10 @@
   background-color: white;
   width: 100vw;
   padding: 3em 5vw 4em 5vw;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 .cardImageContainer {
   display: flex;
@@ -39,8 +43,14 @@
   font-size: 1em;
   font-style: italic;
   padding-bottom: 0.6em;
-  padding: 0.6em 5vw 0.6em 5vw;
 }
 .card {
   width: 200px;
+}
+.buttonWrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
 }

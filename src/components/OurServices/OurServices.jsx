@@ -1,5 +1,6 @@
 import styles from "./OurServices.module.css";
 import Image from "next/image";
+import Button from "../Button/Button";
 
 import { Bodoni_Moda } from "next/font/google";
 const bodoni = Bodoni_Moda({
@@ -58,6 +59,13 @@ const OurServices = () => {
             text={card.text}
           />
         ))}
+      </div>
+      <div className={styles.buttonWrapper}>
+        <Button
+          className={styles.button}
+          url='/contact'
+          text='Start your project &nbsp;&nbsp;&nbsp;&nbsp;  →'
+        />
       </div>
     </div>
   );
