@@ -7,7 +7,7 @@ const bodoni = Bodoni_Moda({
   weight: ["400", "500", "600", "700"],
 });
 
-const MeetFounder = () => {
+const AboutUs = () => {
   return (
     <div className={styles.outter}>
       <div className={bodoni.className}>
@@ -38,4 +38,4 @@ const MeetFounder = () => {
   );
 };
 
-export default MeetFounder;
+export default AboutUs;

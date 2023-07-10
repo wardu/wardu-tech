@@ -10,12 +10,14 @@ import WorkTogether from "@/components/WorkTogether/WorkTogether";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import data from "@/components/Testimonials/data.json";
 import AboutUs from "@/components/AboutUs/AboutUs";
+import OurServices from "@/components/OurServices/OurServices";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <AboutUs />
+      <OurServices />
       <Intro />
       <Carousel />
       <MeetFounder />
