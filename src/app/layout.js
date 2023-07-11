@@ -2,7 +2,7 @@ import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 
 import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/Footer/Footer";
 
 import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({

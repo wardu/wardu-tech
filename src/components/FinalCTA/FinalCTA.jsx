@@ -21,13 +21,13 @@ const FinalCTA = () => {
         </p>
         <Button text='Discover' url='/contact' />
       </div>
-      <Image
+      {/* <Image
         className={styles.blurBall}
         src='/images/blurBall3.png'
         alt='blur ball'
         width={500}
         height={500}
-      />
+      /> */}
       <Image
         className={styles.blurBall2}
         src='/images/blurBall3.png'
