@@ -12,6 +12,7 @@ import data from "@/components/Testimonials/data.json";
 import AboutUs from "@/components/AboutUs/AboutUs";
 import OurServices from "@/components/OurServices/OurServices";
 import OurWork from "@/components/OurWork/OurWork";
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       {/* <Updates /> */}
       {/* <WorkTogether /> */}
       <Testimonials testimonialData={data} />
+      <FinalCTA />
     </>
   );
 }
