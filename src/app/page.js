@@ -24,10 +24,10 @@ export default function Home() {
       {/* <Carousel /> */}
       {/* <MeetFounder /> */}
       {/* <Who /> */}
-      <Questions />
-      <Process />
-      <Updates />
-      <WorkTogether />
+      {/* <Questions /> */}
+      {/* <Process /> */}
+      {/* <Updates /> */}
+      {/* <WorkTogether /> */}
       <Testimonials testimonialData={data} />
     </>
   );

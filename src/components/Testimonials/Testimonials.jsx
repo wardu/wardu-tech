@@ -2,7 +2,13 @@
 
 import styles from "./Testimonials.module.css";
 import React, { useEffect, useRef, useState } from "react";
-import Button from "../Button/Button";
+import Image from "next/image";
+
+import { Bodoni_Moda } from "next/font/google";
+const bodoni = Bodoni_Moda({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 const TESTIMONIAL_DELAY = 4000;
 
@@ -24,25 +30,20 @@ const Testimonial = (props = {}) => {
         ),
       delay
     );
-
     return () => clearTimeout(timeoutRef.current);
   }, [props.testimonialData.length, index, delay]);
 
   const dotsHelper = (idx) => {
     if (refButtonsParentDiv.current === null) return;
-
     if (index === idx) {
       const arr2 = [...refFeedbackParentDiv.current.children];
-
       arr2.forEach((el, i) => {
         if (document.querySelector(`.feedbackText--${i}`))
           document
             .querySelector(`.feedbackText--${i}`)
             .classList.add(styles["not-visible"]);
       });
-
       arr2[index + 1].classList.remove(styles["not-visible"]);
-
       return styles["myDot--active"];
     }
   };
@@ -66,52 +67,54 @@ const Testimonial = (props = {}) => {
   };
 
   return (
-    <>
-      <h2>Over 90% of customers enjoyed using our services</h2>
-      <p>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit.
-      </p>
-      <div className={`${styles["section-three-main-div"]} testimonial`}>
+    <div className={styles.outter}>
+      <div className={bodoni.className}>
+        <h2 className={styles.title}>Reviews</h2>
+      </div>
+      <div className={styles.container}>
         <div
-          ref={refFeedbackParentDiv}
-          className={styles["section-three-sub-div-one"]}
+          className={`${styles.main} ${styles.testimonial} ${bodoni.className}`}
         >
-          <div
-            className={`${styles["quotes-img"]} ${styles["quotes-img-right"]}`}
-          />
-          {testimonialData.map((el, i) => {
-            return (
-              <div
-                key={i}
-                className={`feedbackText--${i} ${styles["main-quotes-div"]} ${styles["not-visible"]}`}
-              >
-                <div className={styles.para}>{el.testimonial}</div>
-                <div className={styles.subText}>{el.author}</div>
-              </div>
-            );
-          })}
-          <div
-            className={`${styles["quotes-img"]} ${styles["quotes-img-left"]}`}
-          />
-        </div>
-        <div ref={refButtonsParentDiv}>
-          {testimonialData.map((_, i, arr) => {
-            return (
-              <div
-                name='change testimonial'
-                key={i}
-                className={`buttonDot${i} ${styles.myDot} ${
-                  index === i ? dotsHelper(i) : ""
-                }`}
-                onClick={() => dotClickHandler(arr, i)}
-              />
-            );
-          })}
+          <div ref={refFeedbackParentDiv} className={styles.sub}>
+            <div className={`${styles.quotesImgRight} ${styles.quotesImg}`} />
+            {testimonialData.map((el, i) => {
+              return (
+                <div
+                  key={i}
+                  className={`feedbackText--${i} ${styles.mainQuotes} ${styles["not-visible"]}`}
+                >
+                  <div className={` ${styles.para} ${bodoni.className}`}>
+                    {el.testimonial}
+                  </div>
+                  <div className={styles.subText}>{el.author}</div>
+                </div>
+              );
+            })}
+            <div className={`${styles.quotesImg} ${styles.quotesImgLeft}`} />
+          </div>
+          <div ref={refButtonsParentDiv}>
+            {testimonialData.map((_, i, arr) => {
+              return (
+                <div
+                  name='change testimonial'
+                  key={i}
+                  className={`buttonDot${i} ${styles.myDot} ${
+                    index === i ? dotsHelper(i) : ""
+                  }`}
+                  onClick={() => dotClickHandler(arr, i)}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
-      <Button url='/contact' text='Work With Us' />
-    </>
+      <Image
+        src='/images/google-reviews.png'
+        alt='quote'
+        width={220}
+        height={135}
+      />
+    </div>
   );
 };
 
