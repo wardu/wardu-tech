@@ -51,7 +51,7 @@ const Footer = () => {
             >
               <div className={styles.social}>
                 <Image
-                  src='/images/socials/simpleInsta.svg'
+                  src='/images/socials/simple-insta.svg'
                   alt='facebook'
                   width={30}
                   height={30}
@@ -66,7 +66,7 @@ const Footer = () => {
             >
               <div className={styles.social}>
                 <Image
-                  src='/images/socials/simpleTwitter.svg'
+                  src='/images/socials/simple-twitter.svg'
                   alt='facebook'
                   width={30}
                   height={30}
@@ -81,7 +81,7 @@ const Footer = () => {
             >
               <div className={styles.social}>
                 <Image
-                  src='/images/socials/simpleFace.svg'
+                  src='/images/socials/simple-face.svg'
                   alt='facebook'
                   width={30}
                   height={30}
