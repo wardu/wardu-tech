@@ -1,4 +1,4 @@
-import styles from "./Footer.module.css";
+import styles from "./footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -32,43 +32,63 @@ const Footer = () => {
           height={100}
         />
         <div className={styles.rightContents}>
-          <div className={styles.topWrapper}>
-            <Image
-              src='/images/up-arrow.svg'
-              alt='up arrow'
-              width={10}
-              height={100}
-            />
-            <p>Top</p>
-          </div>
+          <Link href='#top'>
+            <div className={styles.topWrapper}>
+              <Image
+                src='/images/up-arrow.svg'
+                alt='up arrow'
+                width={10}
+                height={100}
+              />
+              <p>Top</p>
+            </div>
+          </Link>
           <div className={styles.socials}>
-            <div className={styles.social}>
-              <Image
-                src='/images/socials/simpleInsta.svg'
-                alt='facebook'
-                width={30}
-                height={30}
-              />
-              <h3 className={styles.socialText}>@wardutech</h3>
-            </div>
-            <div className={styles.social}>
-              <Image
-                src='/images/socials/simpleTwitter.svg'
-                alt='facebook'
-                width={30}
-                height={30}
-              />
-              <h3 className={styles.socialText}>@wardutech</h3>
-            </div>
-            <div className={styles.social}>
-              <Image
-                src='/images/socials/simpleFace.svg'
-                alt='facebook'
-                width={30}
-                height={30}
-              />
-              <h3 className={styles.socialText}>@wardutech</h3>
-            </div>
+            <a
+              href='https://www.instagram.com/wardutech'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <div className={styles.social}>
+                <Image
+                  src='/images/socials/simpleInsta.svg'
+                  alt='facebook'
+                  width={30}
+                  height={30}
+                />
+                <h3 className={styles.socialText}>@wardutech</h3>
+              </div>
+            </a>
+            <a
+              href='https://www.twitter.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <div className={styles.social}>
+                <Image
+                  src='/images/socials/simpleTwitter.svg'
+                  alt='facebook'
+                  width={30}
+                  height={30}
+                />
+                <h3 className={styles.socialText}>@wardutech</h3>
+              </div>
+            </a>
+            <a
+              href='https://www.facebook.com'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <div className={styles.social}>
+                <Image
+                  src='/images/socials/simpleFace.svg'
+                  alt='facebook'
+                  width={30}
+                  height={30}
+                />
+                <h3 className={styles.socialText}>@wardutech</h3>
+              </div>
+            </a>
           </div>
         </div>
       </div>
