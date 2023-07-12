@@ -1,14 +1,8 @@
-import styles from "./Footer.module.css";
+import styles from "./footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-// import icons
-import { BsFacebook } from "react-icons/bs";
-import { GrInstagram } from "react-icons/gr";
-import { SiTwitter } from "react-icons/si";
-
 const Footer = () => {
-  const style = { color: "white", fontSize: "2.5em" };
   return (
     <div className={styles.container}>
       <div className={styles.leftContainer}>
