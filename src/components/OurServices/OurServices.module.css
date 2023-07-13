@@ -50,3 +50,18 @@
   align-items: center;
   padding: 4em;
 }
+
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+  .cardImageContainer {
+    padding-top: 2em;
+  }
+  .cardTitle {
+    text-align: center;
+  }
+  .cardText {
+    text-align: center;
+  }
+}
