@@ -32,3 +32,15 @@
 .profileContainer {
   padding-right: 4em;
 }
+
+@media (max-width: 850px) {
+  .profileContainer {
+    padding: 12em 0 0 0;
+  }
+  .description {
+    width: 70%;
+  }
+  .outter {
+    padding-bottom: 6em;
+  }
+}
