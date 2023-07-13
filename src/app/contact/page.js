@@ -1,9 +1,18 @@
 "use client";
 
+import styles from "./page.module.css";
+import Image from "next/image.js";
 import { useState } from "react";
 import { sendContactForm } from "../lib/api/route.js";
 
-const initValues = { name: "", email: "", subject: "", message: "" };
+const initValues = {
+  name: "",
+  lName: "",
+  email: "",
+  bName: "",
+  subject: "",
+  message: "",
+};
 
 const initState = { isLoading: false, error: "", values: initValues };
 
@@ -48,13 +57,16 @@ export default function Contact2() {
   };
 
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className={styles.container}>
+      <div className={styles.titleWrapper}>
+        <h1 className={styles.topTitle}>Now booking for September 2023</h1>
+      </div>
       {error && <p style={{ color: "red" }}>{error}</p>}
 
-      <div>
-        <label>Name</label>
+      <div className={styles.inputWrapper}>
+        <label className={styles.label}>First Name</label>
         <input
+          className={styles.formInput}
           type='text'
           name='name'
           style={{
@@ -69,9 +81,28 @@ export default function Contact2() {
         )}
       </div>
 
-      <div>
-        <label>Email</label>
+      <div className={styles.inputWrapper}>
+        <label className={styles.label}>Last Name</label>
         <input
+          className={styles.formInput}
+          type='text'
+          name='lName'
+          style={{
+            borderColor: touched.name && !values.lName ? "red" : undefined,
+          }}
+          value={values.lName}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        {touched.name && !values.lName && (
+          <p style={{ color: "red" }}>Required</p>
+        )}
+      </div>
+
+      <div className={styles.inputWrapper}>
+        <label className={styles.label}>Email</label>
+        <input
+          className={styles.formInput}
           type='email'
           name='email'
           style={{
@@ -86,9 +117,28 @@ export default function Contact2() {
         )}
       </div>
 
-      <div>
-        <label>Subject</label>
+      <div className={styles.inputWrapper}>
+        <label className={styles.label}>Your Business Name</label>
         <input
+          className={styles.formInput}
+          type='text'
+          name='bName'
+          style={{
+            borderColor: touched.name && !values.bName ? "red" : undefined,
+          }}
+          value={values.bName}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        {touched.name && !values.bName && (
+          <p style={{ color: "red" }}>Required</p>
+        )}
+      </div>
+
+      <div className={styles.inputWrapper}>
+        <label className={styles.label}>Subject</label>
+        <input
+          className={styles.formInput}
           type='text'
           name='subject'
           style={{
@@ -103,9 +153,10 @@ export default function Contact2() {
         )}
       </div>
 
-      <div>
-        <label>Message</label>
+      <div className={styles.inputWrapper}>
+        <label className={styles.label}>Message</label>
         <textarea
+          className={styles.formTextArea}
           type='text'
           name='message'
           rows={4}
@@ -122,12 +173,13 @@ export default function Contact2() {
       </div>
 
       <button
+        className={styles.formButton}
         disabled={
           !values.name || !values.email || !values.subject || !values.message
         }
         onClick={onSubmit}
       >
-        {isLoading ? "Loading..." : "Submit"}
+        {isLoading ? "Loading..." : "Submit    →"}
       </button>
     </div>
   );
