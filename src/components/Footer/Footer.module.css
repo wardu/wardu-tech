@@ -87,3 +87,29 @@
   z-index: 1;
   overflow: hidden;
 }
+
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+  .leftContainer {
+    width: 100vw;
+    height: fit-content;
+    padding-top: 2em;
+  }
+  .rightContainer {
+    width: 100vw;
+  }
+  .topWrapper {
+    display: none;
+  }
+  .backgroundXs {
+    display: none;
+  }
+  .socials {
+    padding-top: 3em;
+  }
+  .socialText {
+    font-size: 10px;
+  }
+}
