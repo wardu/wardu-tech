@@ -118,3 +118,47 @@
 .brands img {
   margin-right: 2em;
 }
+
+@media (max-width: 1000px) {
+  .scrollContainer {
+    border: none;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .topTitle {
+    width: 95%;
+    font-size: 3em;
+  }
+  .lowerTitle {
+    font-size: 3em;
+  }
+  .marketLeaders {
+    padding: 3em 0.2em 0 0.2em;
+    text-align: center;
+  }
+  .rightContainer {
+    padding-top: 2em;
+  }
+  .heroText {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    text-align: center;
+  }
+  .brandsTitle {
+    padding-top: 6em;
+  }
+  .brands {
+    width: 100%;
+  }
+  .brands > img {
+    transform: scale(0.6);
+  }
+}
