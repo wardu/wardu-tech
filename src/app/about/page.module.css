@@ -5,12 +5,28 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 4rem;
+  font-weight: 200;
+}
+.heroImage {
+  position: absolute;
+  height: 123%;
+  width: 172%;
+  left: -100%;
+  top: -66%;
+  bottom: 0;
+  z-index: 2;
 }
 .title {
   color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  padding: 1.5rem 1rem;
+  font-size: 70px;
+  font-weight: 400;
+
+  background: linear-gradient(to right, #eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  padding-top: 2em;
 }
 .cardContainer {
   margin: 3rem;
