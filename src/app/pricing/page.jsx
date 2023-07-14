@@ -72,7 +72,7 @@ const Pricing = () => {
 
   return (
     <>
-      <h1 className={styles.title}>Pricing</h1>
+      {/* <h1 className={styles.title}>Pricing</h1> */}
       <div className={styles.container}>
         {pricingOptions.map((option, index) => (
           <PricingCard key={index} {...option} />
