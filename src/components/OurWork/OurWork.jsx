@@ -27,7 +27,8 @@ const OurWork = () => {
     {
       image: "/images/portfolio/imoto-design.png",
       title: "i-Moto",
-      text: `A complete redesign of this landing page for a motorcycle mechanic. We have done a comprehensive rebranding and an innovative web design. This transformation enhances the visual appeal, elevating the brand's digital presence.`,
+      text: `This complete redesign of this landing page for a motorcycle mechanic involves a comprehensive rebranding and an innovative web design. 
+      The transformation enhances the visual appeal, elevating the brand's digital presence.`,
     },
   ];
 
