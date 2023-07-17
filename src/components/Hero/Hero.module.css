@@ -3,16 +3,6 @@
   min-width: 90vw;
   display: flex;
 }
-
-.heroImage {
-  position: absolute;
-  height: 123%;
-  width: 172%;
-  left: -100%;
-  top: -66%;
-  bottom: 0;
-  z-index: 2;
-}
 .left {
   width: 50%;
   color: white;
@@ -25,7 +15,6 @@
   align-items: center;
 }
 .rightContainer {
-  padding-top: 15em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,8 +22,9 @@
 }
 .heroText {
   color: white;
+  letter-spacing: 0.1em;
   padding: 1em;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   width: 73%;
 }
@@ -103,7 +93,7 @@
 }
 .brandsTitle {
   font-size: 12px;
-  padding-top: 10em;
+  padding-top: 4em;
 }
 .brands {
   width: 90%;
@@ -112,7 +102,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 5em;
 }
 .brands img {
