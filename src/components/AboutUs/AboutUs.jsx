@@ -1,5 +1,6 @@
 import styles from "./AboutUs.module.css";
 import Image from "next/image";
+import Button from "../Button/Button";
 
 import { Bodoni_Moda } from "next/font/google";
 const bodoni = Bodoni_Moda({
@@ -14,17 +15,39 @@ const AboutUs = () => {
         <h2 className={styles.title}>About Us</h2>
       </div>
       <div className={styles.container}>
-        <p className={styles.description}>
-          We are Wardu Technologies and performance is our passion. We make
-          high-speed, high-impact websites for industry leaders that want 99th
-          percentile results. Through our mastery of the latest technologies and
-          devotion to optimised code, our websites are lightning-fast,
-          seamlessly functional, and scalable. Partner with us for web solutions
-          that perform at the peak, guaranteeing enhanced user satisfaction,
-          improved search rankings, and boosted business outcomes. Wardu
-          Technologies is the web development powerhouse that can help guide
-          your business to dominate your niche in the digital space.
-        </p>
+        <div className={styles.textContainer}>
+          <p className={styles.description}>
+            My name is Warren Dubery and I am the founder of Wardu Technologies.
+          </p>
+          <p className={styles.description}>
+            I have a passion for creating high-performance websites for small
+            businesses with the same technologies that the tech giants use.
+          </p>
+          <p className={styles.description}>
+            I have a background in Physics and Mathematics and look at
+            technology as a tool to leverage to help solve real-world problems.
+          </p>
+          <p className={styles.description}>
+            I have worked with clients from a wide range of industries,
+            including the financial, travel, and construction sectors. I have
+            also worked with clients from around the world, including Australia,
+            the United Kingdom, and Colombia.
+          </p>
+          <p className={styles.description}>
+            Wardu Technologies is the web development powerhouse that can help
+            guide your business to dominate your niche in the digital space.
+          </p>
+          <p className={styles.description}>
+            Partner with us today for improved search rankings and boosted
+            business outcomes.
+          </p>
+          <div className={styles.button}>
+            <Button
+              url='/contact'
+              text='Work With Me &nbsp;&nbsp;&nbsp;&nbsp;  →'
+            />
+          </div>
+        </div>
         <div className={styles.profileContainer}>
           <Image
             src='/images/wardu-profile.svg'

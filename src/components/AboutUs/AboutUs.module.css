@@ -16,31 +16,50 @@
     )
     0.5;
 }
+.button {
+  margin-top: 2em;
+}
 .title {
   font-weight: 200;
   font-size: 1em;
   font-style: italic;
   padding-bottom: 0.6em;
 }
-.description {
+.textContainer {
   width: 60%;
   padding-top: 7em;
   font-size: 12px;
   font-weight: 200;
-  line-height: 33px;
+  line-height: 26px;
+}
+.description {
+  padding-top: 1em;
 }
 .profileContainer {
   padding-right: 4em;
+  padding-top: 7em;
 }
 
 @media (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .textContainer {
+    width: 90%;
+    padding-top: 2em;
+  }
   .profileContainer {
-    padding: 12em 0 0 0;
+    padding-top: 0em;
   }
   .description {
-    width: 70%;
+    width: 100%;
   }
+  .profileContainer {
+    padding: 0 0 0 0;
+  }
+
   .outter {
-    padding-bottom: 6em;
+    padding-bottom: 3em;
   }
 }
