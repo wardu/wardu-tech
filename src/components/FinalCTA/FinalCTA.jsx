@@ -13,13 +13,14 @@ const FinalCTA = () => {
     <div className={styles.outter}>
       <div className={styles.container}>
         <div>
-          <h2 className={styles.title}>Ready to join the 99th percentile?</h2>
+          <h2 className={styles.title}>
+            Ready to join the top 1% of Performers?
+          </h2>
         </div>
         <p className={styles.description}>
-          It’s easy to start. Fill out a few questions on our form to receive a
-          free discovery session.
+          It's easy to start. Send us a message to receive a free Website Audit.
         </p>
-        <Button text='Discover' url='/contact' />
+        <Button text='Free Audit  &nbsp;&nbsp;&nbsp;&nbsp;  →' url='/contact' />
       </div>
       <Image
         className={styles.blurBall2}
