@@ -13,6 +13,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@types/lodash": "^4.14.195",
+    "cookies-next": "^2.1.2",
     "embla-carousel-react": "^8.0.0-rc07",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",

@@ -1,0 +1,40 @@
+.mainStyle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(26, 32, 44, 0.7);
+}
+
+.innerDivStyle {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 16px;
+  background: #f3f4f6;
+}
+
+.spanStyle {
+  color: #374151;
+  font-size: 16px;
+  margin-right: 64px;
+}
+
+.buttonStyle {
+  background-color: #059669;
+  padding: 8px 32px;
+  border-radius: 0.25rem;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonStyle:hover {
+  background-color: #10b981;
+  cursor: pointer;
+  transform: scale(1.05);
+}
