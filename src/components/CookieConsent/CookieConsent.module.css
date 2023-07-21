@@ -1,13 +1,15 @@
 .mainStyle {
-  position: fixed;
+  /* position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(26, 32, 44, 0.7);
+  background-color: rgba(67, 60, 75, 0.7);
+  z-index: 1001; */
 }
 
 .innerDivStyle {
+  border-top: 2px solid #494949;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,13 +17,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 16px;
-  background: #f3f4f6;
+  padding: 2rem;
+  background: #cccccc;
+  z-index: 1002;
 }
 
 .spanStyle {
   color: #374151;
-  font-size: 16px;
+  font-size: 1rem;
   margin-right: 64px;
 }
 
@@ -37,4 +40,13 @@
   background-color: #10b981;
   cursor: pointer;
   transform: scale(1.05);
+}
+
+@media (max-width: 850px) {
+  .innerDivStyle {
+    padding: 0.8rem;
+  }
+  .spanStyle {
+    font-size: 0.7rem;
+  }
 }
