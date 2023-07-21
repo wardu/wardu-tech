@@ -6,8 +6,11 @@
   align-items: center;
   color: white;
 }
-
-.logo {
+.logoMobile {
+  display: none;
+}
+.logoDesktop,
+.logoMobile {
   padding-top: 2vw;
   padding-left: 1vw;
 }
@@ -18,8 +21,9 @@
 }
 
 .links {
+  height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
 }
 .linkInactive,
@@ -32,35 +36,33 @@
 .linkActive {
   border-bottom: 1px solid white;
 }
+.burgerMenu {
+  display: none;
+}
 
-@media (max-width: 750px) {
-  .container {
-    height: 9rem;
+@media (max-width: 850px) {
+  .logoDesktop {
+    display: none;
   }
-  .logo {
-    padding-top: 30px;
-    padding-left: 0;
-  }
-  .logoText {
-    font-size: 1.1rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
+  .logoMobile {
+    display: inline;
   }
   .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.4rem;
+    display: none;
   }
-  .linkInactive,
-  .linkActive {
+  .burgerMenu {
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin-top: 1.2rem;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .burgerText {
     padding-top: 0.5em;
     letter-spacing: 0.2rem;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 200;
-  }
-  .linkActive {
-    border: none;
-    color: rgb(170, 150, 42);
   }
 }

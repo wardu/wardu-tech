@@ -2,6 +2,7 @@
 
 import styles from "./Navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -22,7 +23,7 @@ const navLinks = [
   },
   {
     id: 4,
-    title: "Contact →",
+    title: "Contact",
     url: "/contact",
   },
 ];
@@ -34,9 +35,13 @@ const Navbar = () => {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href='/'>
-            <div className={styles.logo}>
+            <div className={styles.logoDesktop}>
               <h2 className={styles.logoText}>WARDU</h2>
               <h2 className={styles.logoText}>TECHNOLOGIES.</h2>
+            </div>
+            <div className={styles.logoMobile}>
+              <h2 className={styles.logoText}>WARDU</h2>
+              <h2 className={styles.logoText}>TECH.</h2>
             </div>
           </Link>
         </div>
@@ -54,6 +59,15 @@ const Navbar = () => {
               </Link>
             );
           })}
+        </div>
+        <div className={styles.burgerMenu}>
+          <p className={styles.burgerText}>Menu</p>
+          <Image
+            src='/images/bolt.png'
+            alt='lightning bolt menu icon'
+            width={30}
+            height={30}
+          />
         </div>
       </div>
     </>
