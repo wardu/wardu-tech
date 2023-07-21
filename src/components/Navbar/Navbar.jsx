@@ -4,6 +4,7 @@ import styles from "./Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 const navLinks = [
   {
@@ -45,6 +46,7 @@ const Navbar = () => {
             </div>
           </Link>
         </div>
+        <BurgerMenu />
         <div className={styles.links}>
           {navLinks.map((link) => {
             const isActive = pathname.endsWith(link.url);
@@ -59,15 +61,6 @@ const Navbar = () => {
               </Link>
             );
           })}
-        </div>
-        <div className={styles.burgerMenu}>
-          <p className={styles.burgerText}>Menu</p>
-          <Image
-            src='/images/bolt.png'
-            alt='lightning bolt menu icon'
-            width={30}
-            height={30}
-          />
         </div>
       </div>
     </>

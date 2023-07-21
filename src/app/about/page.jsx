@@ -7,16 +7,6 @@ const About = () => {
     <>
       <h1 className={styles.title}>About Us</h1>
       <div className={styles.container}>
-        <div className={styles.heroImage}>
-          <Image
-            priority={true}
-            src={"/images/blurBall.png"}
-            fill={true}
-            alt='blur ball'
-            quality={100}
-            sizes='100vw'
-          />
-        </div>
         <div className={styles.cardContainer}>
           <div className={styles.card}>
             <p className={styles.blockquote}>

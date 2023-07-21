@@ -7,15 +7,7 @@
   margin-bottom: 4rem;
   font-weight: 200;
 }
-.heroImage {
-  position: absolute;
-  height: 123%;
-  width: 172%;
-  left: -100%;
-  top: -66%;
-  bottom: 0;
-  z-index: 2;
-}
+
 .title {
   color: white;
   font-size: 70px;
