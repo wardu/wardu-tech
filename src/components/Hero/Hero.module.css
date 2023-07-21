@@ -1,11 +1,12 @@
 .container {
-  min-height: 80vh;
+  /* min-height: 80vh; */
   min-width: 90vw;
   display: flex;
 }
 .left {
   width: 50%;
   color: white;
+  padding-top: 20vh;
 }
 .right {
   width: 50%;
@@ -24,9 +25,8 @@
   color: white;
   letter-spacing: 0.1em;
   padding: 1em;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
-  width: 73%;
 }
 .heroTextWrapper {
   display: flex;
@@ -34,24 +34,25 @@
   align-items: flex-end;
 }
 .titleWrapper {
-  padding-left: 24px;
-  padding-top: 90px;
+  padding-top: 20vh;
 }
 .topTitle,
 .lowerTitle {
   color: white;
-  font-size: 70px;
-  font-weight: 400;
-
-  background: linear-gradient(to right, #eee, #333);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  font-weight: 700;
+  text-align: center;
 }
 .topTitle {
-  width: 140%;
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.659);
 }
+.lowerTitle {
+  font-size: 5em;
+  background: linear-gradient(to right, #2629fb, #f12fda);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .scrollContainer {
   display: flex;
   padding-top: 4em;
@@ -68,32 +69,21 @@
   padding-left: 2em;
   padding-top: 2em;
 }
-.marketLeaders {
-  padding: 4em 1.5em 1.5em 1.5em;
-  font-weight: 400;
-  font-size: 32px;
 
-  background: linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
 .content {
   font-weight: 400;
   font-size: 72px;
   letter-spacing: 0.01em;
   line-height: 100px;
 }
-.button {
-  padding-top: 3rem;
-}
+
 .brandsContainer {
   color: white;
 }
 .brandsTitle {
   font-size: 12px;
   padding-top: 4em;
+  padding-left: 1rem;
 }
 .brands {
   width: 90%;
@@ -102,36 +92,26 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding-top: 1em;
   padding-bottom: 5em;
 }
 .brands img {
   margin-right: 2em;
 }
-
-@media (max-width: 1000px) {
-  .scrollContainer {
-    border: none;
-  }
+.brands img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }
+
 @media (max-width: 850px) {
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .left,
   .right {
     width: 100%;
   }
-  .topTitle {
-    width: 95%;
-    font-size: 3em;
-  }
-  .lowerTitle {
-    font-size: 3em;
-  }
-  .marketLeaders {
-    padding: 3em 0.2em 0 0.2em;
-    text-align: center;
+  .right {
+    padding-top: 4em;
   }
   .rightContainer {
     padding-top: 2em;
