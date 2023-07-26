@@ -10,11 +10,21 @@ const montserrat = Montserrat({
   weight: ["200", "400", "500", "600", "700", "800", "900"],
 });
 
+// https://ibb.co/4JRSXB9
+
 export const metadata = {
   title: "Wardu Technologies",
-  description: "Creating Performance Websites for the 99th Percentile",
+  description:
+    "Creating High Performance Websites for High Performance Individuals",
   url: "https://wardu.tech",
-  image: "https://ibb.co/4JRSXB9",
+
+  openGraph: {
+    title: "Wardu Technologies",
+    description:
+      "Creating High Performance Websites for High Performance Individuals",
+    url: "https://wardu.tech",
+    images: "https://ibb.co/4JRSXB9",
+  },
 };
 
 export default function RootLayout({ children }) {
