@@ -17,7 +17,7 @@ export const metadata = {
   description: "Creating High Performance Websites for High Performance People",
   url: "https://wardu.tech",
 
-  metadataBase: new URL("https://ibb.co"),
+  metadataBase: new URL("https://i.ibb.co/nRM1YhZ"),
   alternates: {
     canonical: "/",
     languages: {
@@ -25,7 +25,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    images: "/4JRSXB9",
+    images: "/social-thumb.png",
   },
 };
 
