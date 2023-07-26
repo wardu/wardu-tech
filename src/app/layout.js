@@ -13,6 +13,8 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "Wardu Technologies",
   description: "Creating Performance Websites for the 99th Percentile",
+  url: "https://wardu.tech",
+  image: "https://ibb.co/4JRSXB9",
 };
 
 export default function RootLayout({ children }) {
