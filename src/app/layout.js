@@ -13,9 +13,9 @@ const montserrat = Montserrat({
 // https://ibb.co/4JRSXB9
 
 export const metadata = {
-  title: "Wardu Technologies",
-  description: "Creating High Performance Websites for High Performance People",
-  url: "https://wardu.tech",
+  // title: "Wardu Technologies",
+  // description: "Creating High Performance Websites for High Performance People",
+  // url: "https://wardu.tech",
 
   metadataBase: new URL("https://i.ibb.co/nRM1YhZ"),
   alternates: {
@@ -25,6 +25,12 @@ export const metadata = {
     },
   },
   openGraph: {
+    title: "Wardu Technologies",
+    description:
+      "Creating High Performance Websites for High Performance People",
+    url: "https://wardu.tech",
+    type: "website",
+
     images: "/social-thumb.png",
   },
 };
