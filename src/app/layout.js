@@ -31,7 +31,7 @@ export const metadata = {
     url: "https://wardu.tech",
     type: "website",
 
-    images: "/social-thumb.png",
+    images: "https://i.ibb.co/nRM1YhZ/social-thumb.png",
   },
 };
 
