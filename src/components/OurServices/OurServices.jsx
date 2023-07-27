@@ -23,37 +23,45 @@ function Card({ image, title, text }) {
 const OurServices = () => {
   const cards = [
     {
-      image: "/images/services/responsive-tablet.svg",
-      title: "Fully Responsive Design",
-      text: `We use a mobile-first development approach. This is essential. Not only did Google decide to rank websites by their mobile performance over desktop performance since 2018, but also 60%+ of web traffic comes from mobile.
-      Mobile-friendly designs are great for SEO and the user experience.
-      We make sure your website looks great on all devices.`,
+      image: "/images/services/seo-graph.svg",
+      title: "1. Assessment & Strategy",
+      text: `We look at your current website and digital presence to identify areas that can be improved. We then create a strategy to help you achieve your goals. After the audit, We will also provide you with a detailed report outlining our findings and recommendations.
+     
+      
+
+      A pretty website is useless if it doesn't convert visitors into customers. We will work with you to create a website that is not only beautiful but also functional and effective.`,
     },
     {
       image: "/images/services/web-dev-laptop.svg",
-      title: "Web Development",
-      text: `All of our websites are custom and bespoke.
-      We use the same technology that underpins the world's most performant websites, such as Uber, Starbucks, OpenAI (ChatGPT), GoDaddy, and Netflix.
+      title: "2. Web Development",
+      text: `A well designed, performant website adds credibility and a professional touch to any business or individual's brand. It's a space they fully own and control, unlike their profiles on social media platforms. Every website that we build is custom and bespoke. We don't use templates or themes. We use technologies that can scale with your business and are easy to maintain.
       
-      Your high-performing website will enhance the customer experience and help you rank higher on Google.
+      A high-performance website will enhance your customer's experience and help you rank higher on Google.
+
      `,
     },
     {
-      image: "/images/services/seo-graph.svg",
-      title: "SEO & Analytics",
-      text: "We optimise your website for search engines using a variety of strategies, including , loading optimisation, keyword research and content creation, all tailored to your specific industry and target audience. Our goal is to improve your website's ranking, increase organic traffic, driving more conversions. We also provide you with detailed analytics reports, so you can see how your website is performing and make informed decisions about your marketing strategy.",
+      image: "/images/services/responsive-tablet.svg",
+      title: "3. Feedback & Revisions",
+      text: `Feedback is a great opportunity to reassess and hone the strategy. Confidence and belief that a strategy will work is vital for success. We will work with you to make sure that your website is exactly how you want it. 
+      
+      We optimise your website for search engines using a variety of strategies, including , loading optimisation, keyword research and content creation, all tailored to the industry and target audience. Our goal is to improve your websites ranking, increase organic traffic, driving more conversions.`,
     },
     {
       image: "/images/services/maintenance-cloud.svg",
-      title: "Continued Support & Maintenance",
-      text: "Our all-inclusive maintenance and support services are designed to ensure your website runs smoothly. We are committed to quick and effective problem resolution with a guarantee of fixing any critical issues on the same day. With our backing, you can concentrate on your primary task - managing your business.",
+      title: "4. Continued Support & Maintenance",
+      text: `Our all-inclusive maintenance and support services are designed to ensure your website runs smoothly. We are committed to quick and effective problem resolution with a guarantee of fixing any critical issues on the same day. 
+      
+      Too many websites are left to rot after they are launched. We will make sure that your website is always up to date and secure.
+      
+      With our backing, you can concentrate on your primary task - managing your business.`,
     },
   ];
 
   return (
     <div className={styles.outter}>
       <div className={bodoni.className}>
-        <h2 className={styles.title}>Our Services</h2>
+        <h2 className={styles.title}>Our Method</h2>
       </div>
       <div className={styles.container}>
         {cards.map((card, index) => (
