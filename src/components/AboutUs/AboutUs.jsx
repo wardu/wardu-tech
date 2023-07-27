@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <div className={styles.outter}>
       <div className={bodoni.className}>
-        <h2 className={styles.title}>About Us</h2>
+        <h2 className={styles.title}>The Founder</h2>
       </div>
       <div className={styles.container}>
         <div className={styles.textContainer}>
@@ -21,25 +21,24 @@ const AboutUs = () => {
           </p>
           <p className={styles.description}>
             I have a passion for creating high-performance websites for small
-            businesses with the same technologies that the tech giants use.
+            businesses and individuals. It is the best way that I know how to
+            give people a way to have more impact in the world.
           </p>
           <p className={styles.description}>
             I have a background in Physics and Mathematics and look at
             technology as a tool to leverage to help solve real-world problems.
           </p>
           <p className={styles.description}>
-            I have worked with clients from a wide range of industries,
-            including the financial, travel, and construction sectors. I have
-            also worked with clients from around the world, including Australia,
-            the United Kingdom, and Colombia.
+            I have worked with clients from around the world, including
+            Australia, the United Kingdom, and Colombia.
           </p>
           <p className={styles.description}>
-            Wardu Technologies is the web development powerhouse that can help
-            guide your business to dominate your niche in the digital space.
+            At Wardu Technologies, everything we do is geared towards guiding
+            your business to dominate your niche in the digital space.
           </p>
           <p className={styles.description}>
-            Partner with us today for improved search rankings and boosted
-            business outcomes.
+            Partnering with us is a statement that you are ready to be part of
+            the top 1% of performers in your industry.
           </p>
           <div className={styles.button}>
             <Button
