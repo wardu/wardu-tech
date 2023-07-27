@@ -34,7 +34,6 @@
 .description {
   padding-top: 1rem;
   font-size: 1rem;
-  text-align: center;
 }
 .profileContainer {
   padding-right: 4rem;
@@ -55,6 +54,8 @@
   }
   .description {
     width: 100%;
+
+    text-align: center;
   }
   .profileContainer {
     padding: 0 0 0 0;

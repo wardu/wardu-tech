@@ -44,38 +44,38 @@ const Hero = () => {
           <div className={styles.brands}>
             <Image
               src={"/images/brands/amazon-logo.svg"}
-              width={112}
-              height={33}
+              width={120}
+              height={120}
               alt='amazon logo'
             />
             <Image
               src={"/images/brands/node-logo.svg"}
-              width={90}
-              height={90}
+              width={120}
+              height={120}
               alt='node logo'
             />
-            <Image
+            {/* <Image
               src={"/images/brands/react-logo.svg"}
               width={55}
               height={55}
               alt='react logo'
-            />
+            /> */}
             <Image
               src={"/images/brands/google-logo.svg"}
-              width={147}
-              height={31}
+              width={120}
+              height={120}
               alt='google analytics logo'
             />
-            <Image
+            {/* <Image
               src={"/images/brands/vercel-logo.svg"}
               width={150}
               height={140}
               alt='vercel logo'
-            />
+            /> */}
             <Image
               src={"/images/brands/github-logo.svg"}
-              width={158}
-              height={52}
+              width={120}
+              height={120}
               alt='github logo'
             />
           </div>
