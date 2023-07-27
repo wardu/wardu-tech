@@ -17,27 +17,28 @@
     0.5;
 }
 .button {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .title {
   font-weight: 200;
-  font-size: 1em;
+  font-size: 1rem;
   font-style: italic;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.6rem;
 }
 .textContainer {
   width: 60%;
   padding-top: 7em;
-  font-size: 12px;
   font-weight: 200;
   line-height: 26px;
 }
 .description {
-  padding-top: 1em;
+  padding-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
 }
 .profileContainer {
-  padding-right: 4em;
-  padding-top: 7em;
+  padding-right: 4rem;
+  padding-top: 7rem;
 }
 
 @media (max-width: 850px) {
