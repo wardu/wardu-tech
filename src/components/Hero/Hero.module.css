@@ -46,7 +46,17 @@
   font-size: 3em;
   color: rgba(255, 255, 255, 0.659);
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .lowerTitle {
+  animation: fadeIn 2s;
   font-size: 5em;
   background: linear-gradient(to right, #2629fb, #f12fda);
   -webkit-background-clip: text;
